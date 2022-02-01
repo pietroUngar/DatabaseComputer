@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_@cis137)8jse!&bn3u#k+89=sqyn8k34xfc0tser-j=+(4gyo'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,14 +50,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'DatabaseComputer.wsgi.application'
 
-DATABASES = {
-
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-
-}
+DATABASES = {}
 
 AUTH_PASSWORD_VALIDATORS = [
     {

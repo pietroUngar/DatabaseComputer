@@ -1,62 +1,28 @@
-{% extends 'base.html' %}
+{% extends 'sub_templates/base_with_image.html' %}
 
-{% block content %}
-  <section class="u-clearfix u-image u-shading u-valign-middle u-section-1" src="" data-image-width="5000" data-image-height="3333" id="carousel_9d32">
-    <div class="u-align-center u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
-        <div class="u-gutter-0 u-layout">
-          <div class="u-layout-col">
-            <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-30 u-white u-layout-cell-1">
-              <div class="u-container-layout u-container-layout-1">
-                <div class="u-align-center u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-2">
-                  <div class="u-gutter-0 u-layout">
-                    <div class="u-layout-col">
-                      <div class="u-size-60">
-                        <div class="u-layout-row">
-                          <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-opacity u-opacity-65 u-size-36 u-white u-layout-cell-2">
-                            <div class="u-container-layout u-container-layout-2">
+{% block inside_image %}
+  <div class="u-gutter-0 u-layout">
+    <div class="u-layout-col">
+      <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-30 u-white u-layout-cell-1">
+        <div class="u-container-layout u-container-layout-1">
+          <div class="u-align-center u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-2">
+            <div class="u-gutter-0 u-layout">
+              <div class="u-layout-col">
+                <div class="u-size-60">
+                  <div class="u-layout-row">
+                    <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-opacity u-opacity-65 u-size-36 u-white u-layout-cell-2">
+                      <div class="u-container-layout u-container-layout-2">
 
-                              <h2 class="u-text u-text-1">Add New Element</h2>
-                              <p class="u-text u-text-2">Click on the button to start!</p>
+                        <h2 class="u-text u-text-1">Add New Element</h2>
+                        <p class="u-text u-text-2">Click on the button to start!</p>
 
-                            </div>
-                          </div>
-                          <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-24 u-white u-layout-cell-3">
-                            <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
-
-                              <a href="#" class="u-border-0 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Add Element</a>
-
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-30 u-white u-layout-cell-4">
-              <div class="u-container-layout u-valign-top u-container-layout-4">
-                <div class="u-align-center u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-3">
-                  <div class="u-gutter-0 u-layout">
-                    <div class="u-layout-col">
-                      <div class="u-size-60">
-                        <div class="u-layout-row">
-                          <div class="u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-opacity u-opacity-65 u-size-36 u-white u-layout-cell-5">
-                            <div class="u-container-layout u-valign-bottom-xs u-valign-middle-md u-container-layout-5">
+                    <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-24 u-white u-layout-cell-3">
+                      <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
 
-                              <h2 class="u-text u-text-3">New Research</h2>
-                              <p class="u-text u-text-4">Click on the button to start a new research!</p>
+                        <a href="{% url 'add' %}" class="u-border-0 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Add Element</a>
 
-                            </div>
-                          </div>
-                          <div class="u-container-style u-layout-cell u-opacity u-opacity-65 u-size-24 u-white u-layout-cell-6">
-                            <div class="u-container-layout u-valign-middle u-container-layout-6">
-
-                              <a href="#" class="u-border-0 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">SEARCH</a>
-
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -65,6 +31,36 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="u-align-left u-container-style u-layout-cell u-opacity u-opacity-65 u-size-30 u-white u-layout-cell-4">
+        <div class="u-container-layout u-valign-top u-container-layout-4">
+          <div class="u-align-center u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-3">
+            <div class="u-gutter-0 u-layout">
+              <div class="u-layout-col">
+                <div class="u-size-60">
+                  <div class="u-layout-row">
+                    <div class="u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-opacity u-opacity-65 u-size-36 u-white u-layout-cell-5">
+                      <div class="u-container-layout u-valign-bottom-xs u-valign-middle-md u-container-layout-5">
+
+                        <h2 class="u-text u-text-3">New Research</h2>
+                        <p class="u-text u-text-4">Click on the button to start a new research!</p>
+
+                      </div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-opacity u-opacity-65 u-size-24 u-white u-layout-cell-6">
+                      <div class="u-container-layout u-valign-middle u-container-layout-6">
+
+                        <a href="{% url 'search' %}" class="u-border-0 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">SEARCH</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
 {% endblock %}
