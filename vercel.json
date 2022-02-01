@@ -1,9 +1,16 @@
 {
-    "builds": [{
-        "src": "DatabaseComputer/wsgi.py",
-        "use": "@ardnt/vercel-python-wsgi",
-        "config": { "maxLambdaSize": "15mb" }
-    }],
+    "builds": [
+        {
+
+            "src": "DatabaseComputer/wsgi.py",
+            "use": "@ardnt/vercel-python-wsgi", 
+            "config": { "maxLambdaSize": "100mb" }
+
+        },
+        { "src": "*.html", "use": "@vercel/static" },
+        { "src": "*.py", "use": "@vercel/python" },
+        { "src": "*.js", "use": "@vercel/node" }
+    ],
     "routes": [
         {
             "src": "/(.*)",
