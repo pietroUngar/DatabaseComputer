@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .forms import ComputerForm
 
 def home(request):
 
@@ -8,7 +8,12 @@ def home(request):
 
 def add(request):
 
-    return render(request, "add.html", {})
+    form = ComputerForm()
+    return render(request, "add.html", {
+
+        "form": form
+
+    })
 
 
 def search(request):

@@ -1,5 +1,14 @@
 {% extends 'sub_templates/base_with_image.html' %}
 
 {% block inside_image %}
-<p>ADD</p>
+
+    <h2 class="u-text u-text-1">ADD</h2>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="u-border-0 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">ADD</button>
+
+    </form>
+
 {% endblock %}
