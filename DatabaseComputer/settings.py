@@ -6,7 +6,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure-_@cis137)8jse!&bn3u#k+89=sqyn8k34xfc0tser-j=+(4gyo'
 SECRET_KEY =os.environ['secret_key']
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'serg-computer-database.herokuapp.com']
 
