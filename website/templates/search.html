@@ -1,5 +1,30 @@
 {% extends 'sub_templates/base_with_image.html' %}
 
 {% block inside_image %}
-<p>SEARCH</p>
+<table class="table">
+
+    <thead>
+
+        <tr>
+            <th>Type</th>
+            <th>ID</th>
+            <th>broken</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+    {% for element in elements %}
+
+        <tr>
+
+            <td>{{ element.type }}</td>
+            <td>{{ element.identifier }}</td>
+            <td>{{ element.broken }}</td>
+
+        </tr>
+    {% endfor %}
+    </tbody>
+
+</table>
 {% endblock %}

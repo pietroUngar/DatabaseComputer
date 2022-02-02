@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ComputerForm
+from .models import Computer
 
 def home(request):
 
@@ -18,4 +19,9 @@ def add(request):
 
 def search(request):
 
-    return render(request, "search.html", {})
+    elements = Computer.objects.all()
+    return render(request, "search.html", {
+
+        "elements": elements
+
+    })

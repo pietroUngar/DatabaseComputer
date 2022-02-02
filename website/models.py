@@ -7,6 +7,14 @@ class Element(models.Model):
     type = models.CharField(max_length=100)
     broken = models.BooleanField()
 
+    @property
+    def identifier(self):
+        return str(self)
+
+    def __str__(self):
+
+        return "SERG-{0:015d}".format(self.pk)
+
 
 class Computer(Element):
 
