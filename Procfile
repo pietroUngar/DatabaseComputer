@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath DatabaseComputer DatabaseComputer.wsgi
